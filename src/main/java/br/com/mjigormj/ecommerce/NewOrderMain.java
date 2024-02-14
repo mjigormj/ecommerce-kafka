@@ -11,8 +11,8 @@ import java.util.concurrent.ExecutionException;
 public class NewOrderMain {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         var producer = new KafkaProducer<String, String>(properties());
-        var value = "12312312,13231231,46000";
-        var record = new ProducerRecord<>("ECOMMERCEC_NEW_ORDER", value, value);
+        var value = "12312312,13231231,12345";
+        var record = new ProducerRecord<>("ECOMMERCE_NEW_ORDER", value, value);
         producer.send(record, (data, ex) -> {
             if(ex != null){
                 ex.printStackTrace();
