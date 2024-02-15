@@ -19,16 +19,9 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>org.example</groupId>
-            <artifactId>ecommerce-kafka</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
             <groupId>br.com.mjigormj</groupId>
             <artifactId>common-kafka</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 
